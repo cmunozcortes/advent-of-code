@@ -33,6 +33,8 @@ with open('20191202/input.txt') as f:
     for line in f:
         program = list(map(int, line.strip('\n').split(',')))
 
+
+### Part 1: 
 # Make copy of program and modify input positions 1 and 2
 part1_program = program.copy()
 part1_program[1] = 12
@@ -40,16 +42,16 @@ part1_program[2] = 2
 
 # Execute program
 run_program(part1_program)
-
-# Part 1: 
 print('Part 1 Answer')
 print('First position: ', part1_program[0])
 
-# Part 2:
+### Part 2:
 # Modify operand1 and operand2
 part2_program = program.copy()
 part2_program[1] = 89
 part2_program[2] = 76
+
+# Execute program
 run_program(part2_program)
 part2_result = 100 * part2_program[1] + part2_program[2]
 print('\nPart 2 Answer: ', part2_result)
