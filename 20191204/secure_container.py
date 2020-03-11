@@ -63,7 +63,7 @@ def digits_never_decrease(pwd):
     return meets_criteria
 
 # Read input file
-with open('20191204/input.txt') as f:
+with open('input.txt') as f:
     for line in f:
         # pwd_range = list(map(int, line.strip('\n').split('-')))
         pwd_range = line.strip('\n').split('-')
